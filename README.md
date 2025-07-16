@@ -1,6 +1,6 @@
 # 📅 EVENTOS_BD
 
-Sistema backend para gerenciamento de eventos, desenvolvido com **Spring Boot** e **JPA (Hibernate)**. Permite o cadastro, controle e associação entre pessoas, empresas, eventos e suas participações.
+Sistema backend para gerenciamento de eventos acadêmicos, desenvolvido com **Spring Boot** e **JPA (Hibernate)**. Permite o cadastro, controle e associação entre pessoas, empresas, eventos e suas participações.
 
 ## 🚀 Tecnologias Utilizadas
 - Java 21
@@ -46,18 +46,18 @@ src
 
 ### 📌 Camadas do Projeto
 
-#### ✅ Entidades (`entities`)
+#### Entidades (`entities`)
 Representações das tabelas do banco. Utiliza anotações JPA para definição das relações:
 - `@ManyToOne`: muitos para um
 - `@ManyToMany`: muitos para muitos
 
-#### ✅ Repositórios (`repositories`)
+#### Repositórios (`repositories`)
 Responsáveis pela comunicação com o banco de dados. Estendem `JpaRepository` para acesso a métodos de CRUD.
 
-#### ✅ Serviços (`services`)
+#### Serviços (`services`)
 Contêm a lógica de negócio da aplicação. Cada entidade possui um serviço com os métodos básicos de criação, leitura, atualização e deleção (CRUD).
 
-#### ✅ Controladores (`controllers`)
+#### Controladores (`controllers`)
 Exposição dos serviços via endpoints REST, com métodos HTTP como:
 - `GET`, `POST`, `PUT`, `DELETE`
 
